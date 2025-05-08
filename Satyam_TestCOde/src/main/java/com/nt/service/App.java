@@ -17,5 +17,7 @@ public class App {
         		      """);
         
         System.out.println("Commit Test 1");
+
+        System.out.println("This msg add from Git hub WebSite");
     }
 }
