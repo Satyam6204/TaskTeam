@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans 
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="Dept1" class="com.nt.sbeans.Department">
+    <property name="Id" value="100"   />
+    <property name="deptName" value="JupiterTeam"/>    
+    </bean>
+    
+    <bean id="Dept2" class="com.nt.sbeans.Department">
+    <property name="Id" value="101"/>
+    <property name="deptName" value="MarsTeam"/>
+    </bean>
+    
+    <bean id="Dept3"  class="com.nt.sbeans.Department">
+    <property name="Id" value="102"/>
+    <property name="deptName" value="VenusTeam"/>   
+    </bean>
+    
+    <bean id="Dept4" class="com.nt.sbeans.Department">
+    <property name="Id" value="103"/>
+    <property name="deptName" value="MoonTeam"/>
+    
+    </bean>
+    
+    <bean id="Comp" class="com.nt.sbeans.Company">
+    <property name="dept">
+      
+      <list>
+       <ref bean="Dept1"/>
+       <ref bean="Dept2"/>
+       <ref bean="Dept3"/>
+       <ref bean="Dept4"/>
+    
+    </list>
+    
+    </property>
+    
+    </bean>
+   
+
+</beans>

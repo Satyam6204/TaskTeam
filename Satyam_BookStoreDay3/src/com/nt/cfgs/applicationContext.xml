@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans 
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+           
+           <bean id="s1" class="com.nt.sbeans.Store">
+           <property name="title" value="JioBook"/>
+           <property name="author" value="MukeshBro"/>
+           </bean>
+           
+           <bean id="s2" class="com.nt.sbeans.Store">
+           <property name="title" value="airtelBook"/>
+           <property name="author" value="AbcBro"/>
+           </bean>
+           
+           <bean id="d" class="com.nt.sbeans.Books">
+           <property name="books">
+           <map>
+            	<entry key="JioBook"  value-ref="s1"/>
+            	<entry key="airtelBook" value-ref="s2"/>
+           </map>
+           
+           </property>
+           
+           
+           </bean>
+          
+          
+          
+                 
+</beans>

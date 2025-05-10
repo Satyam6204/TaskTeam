@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans 
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="book1" class="com.nt.sbeans.Book">
+    	 				 <property name="title" value="Jijim"/>
+    	 				 <property name="author" value="Dr.Satyam"/>
+       
+    </bean>
+    
+    <bean id="book2" class="com.nt.sbeans.Book">
+    <property name="title" value= "Joker"/>
+    <property name="author" value="Dr.Sonam"/>
+    </bean>
+    
+     <bean id="book3" class="com.nt.sbeans.Book">
+    <property name="title" value= "KDM"/>
+    <property name="author" value="Mr.Pankaj"/>
+    </bean>
+    
+     <bean id="book4" class="com.nt.sbeans.Book">
+    <property name="title" value= "ABC"/>
+    <property name="author" value="Dr.Abc"/>
+    </bean>
+    
+    <bean id="Blib" class="com.nt.sbeans.Library">
+    <property name="book">
+         <list>
+             <ref bean="book1"/>
+             <ref bean="book2"/>
+             <ref bean="book3"/>
+             <ref bean="book4"/>
+        </list>
+    
+    </property>
+    </bean>
+             
+   
+
+</beans>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans 
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+           
+           <bean id="d1"  class="com.nt.sbeans.Department">
+           <property name="DeptId" value="101"/>
+           <property name="DeptName" value="JupiterDept"/>        
+           </bean>
+           
+           <bean id="d2"  class="com.nt.sbeans.Department">
+           <property name="DeptId" value="102"/>
+           <property name="DeptName" value="MoonDept"/>           
+           </bean>
+           
+           <bean id="d3" class="com.nt.sbeans.Department">
+           <property name="DeptId" value="103"/>
+           <property name="DeptName" value="VenusDept"/>
+           </bean>
+           
+           <bean id="d4" class="com.nt.sbeans.Department">
+           <property name="DeptId" value="104"/>
+           <property name="DeptName" value="MarsDept"/>
+           </bean>
+           
+           <bean id="data" class="com.nt.sbeans.Company">
+           <property name="departments">
+           <map>
+           
+            <entry key="101" value-ref="d1"/>
+            <entry key="102" value-ref="d2"/>
+            <entry key="103" value-ref="d3"/>
+            <entry key="104" value-ref="d4"/>
+
+           </map>
+           </property>
+           
+           </bean>
+                 
+                            </beans>
