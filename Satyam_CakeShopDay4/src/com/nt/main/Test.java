@@ -64,6 +64,8 @@ public class Test {
 		 c1.showCake();
 		 c2.showCake();
 		 
+System.out.println("CakeShop Order msg using applicationContext.xml");
+		 
 		 ctx.close();
 		
 		
