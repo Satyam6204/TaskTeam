@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="cake1" class="com.nt.sbeans.OrderCake">
+    <constructor-arg value="round"/>
+    <constructor-arg value="mango"/>
+    <constructor-arg value="1"/>
+    </bean>
+    
+    <bean id="cake2" class="com.nt.sbeans.OrderCake">
+    <constructor-arg value="cube"/>
+    <constructor-arg value="banana"/>
+    <constructor-arg value="4"/>
+    <constructor-arg value="Happy birthday"/>
+    </bean>
+
+</beans>
