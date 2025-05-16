@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+			<bean id="sbi" class="com.nt.sbeans.SBIBankApplication">
+			<property name="Bank_Name" value="SBI"/>
+			<property name="Bank_Branch" value="HYD"/>
+			<property name="IFSC" value="SBI1234567"/>
+			</bean>		
+			 <bean id="icic" class="com.nt.sbeans.ICICApplication">
+			 <property name="Bank_Name" value="ICIC"/>
+			 <property name="Bank_Branch" value="HYD"/>
+			 <property name="IFSC" value="ICIC123456"/>
+			 </bean>
+			 
+						
+			<bean id="banksbi" class="com.nt.sbeans.BankApplication">
+			<constructor-arg ref="sbi"/>
+			</bean>
+			
+			<bean id="bankicic" class="com.nt.sbeans.BankApplication">
+			<constructor-arg ref="icic"/>
+			</bean>
+
+
+
+</beans>
