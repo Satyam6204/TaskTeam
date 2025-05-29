@@ -14,6 +14,8 @@ import com.nt.sbeans.SeasonService;
 public class SatyamBootProj01LabTask01Application {
 
     public static void main(String[] args) {
+    	
+    	System.out.println("Program Start");
 
         ApplicationContext ctx = SpringApplication.run(SatyamBootProj01LabTask01Application.class, args);
 
