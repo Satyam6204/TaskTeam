@@ -23,7 +23,7 @@ public class SatyamBootProj04TrafficLightApplication {
 		String name = sc.next();
 	
 		    TrafficLight tt= ctx.getBean("tl",TrafficLight.class);
-	    if(name.contentEquals("red") || name.equalsIgnoreCase("yellow") || name.equalsIgnoreCase("green")) {
+	  
 		        String msg =tt.Action(name);
 		        		System.out.print(name+" -> "+msg);
 		        				System.out.println();
@@ -37,14 +37,13 @@ public class SatyamBootProj04TrafficLightApplication {
 		        					running=false;
 		        							System.out.println("Thank You For Visit😎");
 		        	}else {
-		        		 sc.close();
+		        	     running =false;
+		        	     sc.close();
 		        				System.out.println("Invalid Option Only 'Y' or 'N ");
 		        		}
-				}else {
-						System.out.println("Enter Only Traffic Colors (red,green,yellow)");
 				}
 
 			}
 		}
-}
+
 	

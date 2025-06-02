@@ -7,11 +7,11 @@ public class TrafficLight {
 	
 	public String Action(String color) {
 		
-		return switch(color) {
+		return switch(color.toLowerCase()) {
 		case "red" ->  "STOP";
 		case "yellow" -> "WAIT";
-		case "Green" -> "GO";
-		default ->	throw new IllegalArgumentException("invalid Option"+color);
+		case "green" -> "GO";
+		default ->	throw new IllegalArgumentException("invalid Option "+color);
 		};
 	}
 }
