@@ -20,7 +20,7 @@ public class SatyamBootProj05DayTypeIdentifierApplication {
 		
 		System.out.print("Enter Day \t:");
 		 
-		if(sc.hasNext()) {
+		 if(sc.hasNext()) {
 		
 		String name =sc.next();
 		
