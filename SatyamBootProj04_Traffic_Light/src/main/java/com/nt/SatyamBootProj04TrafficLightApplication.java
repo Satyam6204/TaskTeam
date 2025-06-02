@@ -25,20 +25,20 @@ public class SatyamBootProj04TrafficLightApplication {
 	              										System.out.println();
 	              											System.out.print("Did you want check another Traffic Color So Press Y/N\t:");
 	              													String Again=sc.next();
-		        	if(Again.equalsIgnoreCase("Y")) {
-		        					running = true;
+		                              	if(Again.equalsIgnoreCase("Y")) {
+		        		             			running = true;
 			
-		        		}else if(Again.equalsIgnoreCase("N")) {
-		        			 sc.close();
-		        					running=false;
+		                              			}else if(Again.equalsIgnoreCase("N")) {
+		                              					sc.close();
+		                              						running=false;
 		        							System.out.println("Thank You For Visit😎");
-		        				}else {
-		        						running =false;
-		        								sc.close();
-		        									System.out.println("Invalid Option Only 'Y' or 'N ");
-		        					}
-							}
-					}
-			}
+		                              					}else {
+		                              							running =false;
+		                              								sc.close();
+		                              								System.out.println("Invalid Option Only 'Y' or 'N ");
+		                              						}
+												}
+									}
+						}
 
 	
