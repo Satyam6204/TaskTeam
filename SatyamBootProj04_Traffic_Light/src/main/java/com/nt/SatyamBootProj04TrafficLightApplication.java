@@ -38,7 +38,7 @@ public class SatyamBootProj04TrafficLightApplication {
 		        							System.out.println("Thank You For Visit😎");
 		        	}else {
 		        	     running =false;
-		        	     sc.close();
+		        	     sc.close(); 
 		        				System.out.println("Invalid Option Only 'Y' or 'N ");
 		        		}
 				}
