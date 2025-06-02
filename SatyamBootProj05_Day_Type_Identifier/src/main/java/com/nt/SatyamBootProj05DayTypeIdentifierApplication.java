@@ -21,12 +21,8 @@ public class SatyamBootProj05DayTypeIdentifierApplication {
 		System.out.print("Enter Day \t:");
 		
 		if(sc.hasNext()) {
-			 
-			
 		
 		String name =sc.next();
-		
-		if(name.equalsIgnoreCase(name)) {
 		
 		DayIdentifier cf = ctx.getBean("df",DayIdentifier.class);
 		
@@ -37,7 +33,7 @@ public class SatyamBootProj05DayTypeIdentifierApplication {
 		sc.close();
 		((ConfigurableApplicationContext) ctx).close();
 		
-		}
+		
 		}
 	}
 
